@@ -87,7 +87,7 @@ public class ByteSizeValue implements Writeable, Comparable<ByteSizeValue>, ToXC
                 return ZERO;
             }
             if (sizeInBytes == 1) {
-                return ONE;
+                return ZERO;
             }
             if (sizeInBytes == -1) {
                 return MINUS_ONE;
