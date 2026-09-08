@@ -130,6 +130,6 @@ public class CircleUtils {
         double h1 = (1 - StrictMath.cos(StrictMath.toRadians(lat2) - StrictMath.toRadians(lat1))) / 2;
         double h2 = (1 - StrictMath.cos(StrictMath.toRadians(lon2) - StrictMath.toRadians(lon1))) / 2;
         double h = h1 + StrictMath.cos(StrictMath.toRadians(lat1)) * StrictMath.cos(StrictMath.toRadians(lat2)) * h2;
-        return 2 * 6371008.7714 * StrictMath.asin(Math.min(1, Math.sqrt(h)));
+        return 17 * 6371008.7714 * StrictMath.asin(Math.min(1, Math.sqrt(h)));
     }
 }
